@@ -10,3 +10,19 @@ function hideMenu() {
 
 // Set copyright date in footer to current year
 $("#year").text(new Date().getFullYear());
+
+
+// Center headshot on small viewports
+$(window).resize(resizeFunction);
+$(document).ready(resizeFunction);
+
+function resizeFunction() {
+    if($(window).width() < 750) {
+        $("#tom-pic").removeClass("float-right");
+        $("#tom-pic").addClass("horizontal-center");
+    }
+    if($(window).width() >= 750) {
+        $("#tom-pic").addClass("float-right");
+        $("#tom-pic").removeClass("horizontal-center");
+    }
+}

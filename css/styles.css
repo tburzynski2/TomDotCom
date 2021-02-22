@@ -2,6 +2,7 @@
 /* Main Section */
 .main-section {
   background-color: #fff;
+  padding-top: 100px;
 }
 
 .greeting {
@@ -37,17 +38,6 @@
   color: #fb743e;
 }
 
-.drink-tom-img {
-  border-radius: 100%;
-  width: 25%;
-  float: right;
-}
-
-.party-div {
-  text-align: right;
-  position: relative;
-}
-
 /********************** ----GLOBAL STYLES---- ************************/
 html,
 body {
@@ -73,16 +63,15 @@ footer {
   background-color: #383e56;
 }
 
+section {
+  height: 100%;
+}
+
 .hit-me-up {
   margin-bottom: 0;
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-section {
-  height: 100%;
-  padding-top: 56px;
 }
 
 .br-lg {
@@ -113,6 +102,15 @@ section {
   font-size: small;
 }
 
+.float-right {
+  float: right;
+}
+
+.horizontal-center {
+  text-align: center;
+  margin: auto;
+}
+
 .navbar-fixed-top {
   position: fixed;
   right: 0;
@@ -135,9 +133,7 @@ section {
 }
 
 .tom-pic {
-  float: left;
   width: 12rem;
-  float: right;
 }
 
 .vertical-center {
